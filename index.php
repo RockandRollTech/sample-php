@@ -10,7 +10,9 @@ if(isset($_GET['message']) && $_GET['message'] != '') {
 	$text = htmlspecialchars($_GET['message']);
 }
 
+echo "TESTING UPDATES<br>";
+
 $cow = Farm::create(\Cowsayphp\Farm\Cow::class);
 echo $cow->say($text);
 
-echo "TESTING UPDATES<br>";
+
