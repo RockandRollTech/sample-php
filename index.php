@@ -5,7 +5,7 @@ use Cowsayphp\Farm;
 
 header('Content-Type: text/plain');
 
-$text = "Set a message by adding ?message=<message here> to the URL. Or not. I'm not your mum.";
+$text = "Set a message by adding ?message=<message here> to the URL. Or not.";
 if(isset($_GET['message']) && $_GET['message'] != '') {
 	$text = htmlspecialchars($_GET['message']);
 }
